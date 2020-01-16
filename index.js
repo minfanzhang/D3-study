@@ -4,18 +4,21 @@ const svg = canvas.append('svg')
     .attr('width', 600)
     .attr('height', 600);
 
-svg.append('rect')
+const group = svg.append('g')
+    .attr('transform', 'translate(0, 100)');
+
+group.append('rect')
     .attr('x', 100)
     .attr('y', 100)
     .attr('width', 150)
     .attr('height', 100)
     .attr('fill', 'blue');
-svg.append('circle')
+group.append('circle')
     .attr('cx', 350)
     .attr('cy', 150)
     .attr('r', 50)
     .attr('fill', 'red');
-svg.append('line')
+group.append('line')
     .attr('x1', 450)
     .attr('y1', 100)
     .attr('x2', 550)
