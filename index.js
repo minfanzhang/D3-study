@@ -21,3 +21,10 @@ svg.append('line')
     .attr('x2', 550)
     .attr('y2', 250)
     .attr('stroke', 'grey');
+
+svg.append('text')
+    .attr('x', 100)
+    .attr('y', 250)
+    .attr('fill', 'pink')
+    .text('hello world')
+    .style('font-family', 'arial');
