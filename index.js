@@ -6,6 +6,7 @@ const data = [
 
 const svg = d3.select('svg');
 
+// Join data to rects
 const rect = svg.selectAll('rect')
     .data(data)
 
